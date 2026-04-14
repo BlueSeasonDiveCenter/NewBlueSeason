@@ -558,6 +558,8 @@ ul { list-style: none; }
 
 .site-card-img {
   height: 200px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .site-card-body {
@@ -1086,6 +1088,8 @@ ul { list-style: none; }
 
 .site-detail-img {
   height: 220px;
+  width: 100%;
+  object-fit: cover;
   border-radius: var(--radius-sm);
 }
 
