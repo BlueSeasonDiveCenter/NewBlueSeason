@@ -45,11 +45,11 @@ body {
   font-family: var(--font-body);
   background: linear-gradient(to bottom,
     #0a1628 0%,       /* Hero area: matches video end */
-    #0a1628 15%,      /* Just past hero: same */
-    #081221 35%,      /* Upper depths */
-    #050d1a 55%,      /* Mid ocean */
-    #030811 75%,      /* Deep */
-    #000000 100%      /* Abyss */
+    #0a1628 20%,      /* Just past hero: same */
+    #081a30 45%,      /* Upper depths — still readable navy */
+    #061428 70%,      /* Mid ocean */
+    #040f20 90%,      /* Deep ocean */
+    #020a18 100%      /* Abyss — deep navy, not pure black */
   );
   color: var(--color-text);
   line-height: 1.7;
