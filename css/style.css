@@ -43,10 +43,18 @@ html {
 
 body {
   font-family: var(--font-body);
-  background: var(--color-bg-deep);
+  background: linear-gradient(to bottom,
+    #0a1628 0%,       /* Hero area: matches video end */
+    #0a1628 15%,      /* Just past hero: same */
+    #081221 35%,      /* Upper depths */
+    #050d1a 55%,      /* Mid ocean */
+    #030811 75%,      /* Deep */
+    #000000 100%      /* Abyss */
+  );
   color: var(--color-text);
   line-height: 1.7;
   overflow-x: hidden;
+  min-height: 100vh;
   -webkit-font-smoothing: antialiased;
 
   /* Disable text selection globally (form fields re-enabled below) */
