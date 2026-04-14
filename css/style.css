@@ -554,16 +554,23 @@ ul { list-style: none; }
 
 .site-card {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .site-card-img {
   height: 200px;
   width: 100%;
   object-fit: cover;
+  flex-shrink: 0;
 }
 
 .site-card-body {
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .site-card-body h3 {
@@ -611,6 +618,7 @@ ul { list-style: none; }
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+  margin-top: auto;
 }
 
 .site-highlights span {
