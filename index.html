@@ -174,8 +174,7 @@
     <nav class="navbar" role="navigation" aria-label="Main navigation">
       <div class="container">
         <a href="index.html" class="nav-brand" aria-label="Blue Season Camiguin home">
-          <img class="nav-logo" src="img/logo.svg" alt="" onerror="this.style.display='none'">
-          Blue Season <span>Camiguin</span>
+          <img class="nav-logo-img" src="img/logo-panda.webp" alt="Blue Season Scuba Diving Center Camiguin - Panda Diver Logo">
         </a>
         <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -199,15 +198,8 @@
     <!-- ========== HERO ========== -->
     <section class="hero">
       <div class="hero-bg">
-        <!-- Video: desktop only, auto-plays muted & looped -->
-        <video class="hero-video" autoplay muted loop playsinline poster="img/hero-home.webp" aria-hidden="true">
-          <source src="img/hero-video.mp4" type="video/mp4">
-          <!-- If browser can't play video, poster image shows -->
-        </video>
-        <!-- Fallback image: always present, shown on mobile & while video loads -->
-        <div class="hero-poster img-placeholder" role="img" aria-label="Underwater photo of coral reef and sea turtles at Camiguin Island">
-          Replace with hero-home.jpg (1920×1080)
-        </div>
+        <!-- Static hero image -->
+        <img class="hero-image" src="img/hero-home.webp" alt="Underwater photo of coral reef and sea turtles at Camiguin Island" fetchpriority="high" decoding="async">
       </div>
       <div class="hero-overlay"></div>
       <div class="bubbles" aria-hidden="true">
@@ -472,7 +464,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="nav-brand"><img class="nav-logo" src="img/logo.svg" alt="" onerror="this.style.display='none'">Blue Season <span>Camiguin</span></a>
+          <a href="index.html" class="nav-brand"><img class="footer-logo-img" src="img/logo-panda.webp" alt="Blue Season Scuba Diving Center Camiguin - Panda Diver Logo"></a>
           <p>PADI Dive Center on Camiguin Island, Philippines. Discover pristine reefs, sea turtles, and the Philippines' best-kept diving secret.</p>
         </div>
         <div>

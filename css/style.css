@@ -21,7 +21,8 @@
   --font-body:    'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 
   --max-width: 1200px;
-  --nav-height: 72px;
+  --nav-height: 100px;
+  --nav-height-scrolled: 70px;
   --radius: 12px;
   --radius-sm: 8px;
 
@@ -395,10 +396,13 @@ ul { list-style: none; }
   width: 100%;
   height: var(--nav-height);
   z-index: 1000;
-  transition: background 0.3s, box-shadow 0.3s;
+  padding: 8px 0;
+  transition: background 0.3s, box-shadow 0.3s, height 0.4s ease, padding 0.4s ease;
 }
 
 .navbar.scrolled {
+  height: var(--nav-height-scrolled);
+  padding: 6px 0;
   background: var(--color-glass);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -442,6 +446,26 @@ ul { list-style: none; }
 .footer-brand .nav-logo {
   height: 48px;
   margin-bottom: 4px;
+}
+
+/* Panda logo — larger, shrinks on scroll */
+.nav-logo-img {
+  height: 80px;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+  transition: height 0.4s ease;
+}
+
+.navbar.scrolled .nav-logo-img {
+  height: 50px;
+}
+
+.footer-logo-img {
+  height: 90px;
+  width: auto;
+  display: block;
+  margin-bottom: 8px;
 }
 
 .nav-links {
@@ -520,32 +544,14 @@ ul { list-style: none; }
   z-index: 0;
 }
 
-/* Hero video — desktop only, sits above poster */
-.hero-video {
+/* Static hero image */
+.hero-image {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1;
-}
-
-/* Fallback poster — behind video, visible on mobile or while video loads */
-.hero-poster {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 0;
-  font-size: 1.1rem;
   z-index: 0;
-}
-
-.hero-bg .img-placeholder {
-  width: 100%;
-  height: 100%;
-  border-radius: 0;
-  font-size: 1.1rem;
 }
 
 .hero-overlay {
@@ -1282,11 +1288,28 @@ ul { list-style: none; }
 }
 
 @media (max-width: 768px) {
+  :root {
+    --nav-height: 80px;
+    --nav-height-scrolled: 60px;
+  }
+
   .section {
     padding: 60px 0;
   }
 
   /* Nav mobile */
+  .nav-logo-img {
+    height: 60px;
+  }
+
+  .navbar.scrolled .nav-logo-img {
+    height: 40px;
+  }
+
+  .footer-logo-img {
+    height: 70px;
+  }
+
   .nav-toggle {
     display: flex;
   }
