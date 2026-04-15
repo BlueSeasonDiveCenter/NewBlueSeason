@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "mcp__Claude_Preview__preview_start",
-      "Bash(du -sh /Users/tiger/Documents/WebCode/NewBlueSeason/img/*)"
+      "Bash(du -sh /Users/tiger/Documents/WebCode/NewBlueSeason/img/*)",
+      "Bash(ls -la /Users/tiger/Documents/WebCode/NewBlueSeason/img/hero-home*)"
     ]
   }
 }
