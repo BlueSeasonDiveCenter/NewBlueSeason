@@ -3,18 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blue Season Camiguin — PADI Dive Center in Camiguin Island, Philippines</title>
-  <meta name="description" content="Blue Season Camiguin is a PADI dive center on Camiguin Island, Philippines. Explore pristine dive sites, get PADI certified, and discover sea turtles, coral gardens, and untouched marine life.">
+  <meta name="theme-color" content="#0a1628">
+  <meta name="color-scheme" content="dark">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Primary SEO -->
+  <title>Camiguin Diving | PADI Dive Center & Dive Shop in Camiguin Island, Philippines</title>
+  <meta name="description" content="Camiguin diving at Blue Season — the PADI dive center and dive shop on Camiguin Island, Philippines. Scuba diving courses, fun dives to Mantigue Island, Sunken Cemetery, Burias Shoal & more. Book your dive today.">
+  <meta name="keywords" content="camiguin diving, camiguin dive, camiguin scuba, dive shop camiguin, dive center camiguin, scuba diving camiguin, padi camiguin, camiguin island diving, dive camiguin, scuba camiguin, philippines diving, mantigue island diving, sunken cemetery dive, burias shoal, camiguindiver">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <meta name="bingbot" content="index, follow">
+  <meta name="author" content="Blue Season Camiguin">
   <link rel="canonical" href="https://camiguindiver.com/">
 
+  <!-- Geo Tags (local SEO) -->
+  <meta name="geo.region" content="PH-CAM">
+  <meta name="geo.placename" content="Camiguin Island, Mambajao">
+  <meta name="geo.position" content="9.2517;124.7283">
+  <meta name="ICBM" content="9.2517, 124.7283">
+
   <!-- Open Graph -->
-  <meta property="og:title" content="Blue Season Camiguin — PADI Dive Center in Camiguin Island">
-  <meta property="og:description" content="Discover pristine dive sites, PADI courses, and an unforgettable underwater experience on Camiguin Island, Philippines.">
+  <meta property="og:title" content="Camiguin Diving | Blue Season PADI Dive Center & Dive Shop">
+  <meta property="og:description" content="Discover Camiguin diving at its best — PADI courses, pristine reefs, sea turtles & thresher sharks on Camiguin Island, Philippines.">
   <meta property="og:url" content="https://camiguindiver.com/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://camiguindiver.com/img/og-home.jpg">
+  <meta property="og:image:alt" content="Sea turtle and coral reef — Camiguin diving at Mantigue Island">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="Blue Season Camiguin">
   <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Camiguin Diving | Blue Season PADI Dive Center">
+  <meta name="twitter:description" content="Scuba diving in Camiguin Island, Philippines. PADI courses, fun dives, sea turtles & more.">
+  <meta name="twitter:image" content="https://camiguindiver.com/img/og-home.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="/favicon.png">
+
+  <!-- Performance: preload critical hero asset for LCP -->
+  <link rel="preload" as="image" href="img/hero-home.jpg" fetchpriority="high">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,46 +56,112 @@
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Schema: LocalBusiness -->
+  <!-- Schema: LocalBusiness + WebSite + FAQPage (graph) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Blue Season Camiguin",
-    "description": "PADI Dive Center offering scuba diving courses, fun dives, and accommodation on Camiguin Island, Philippines.",
-    "url": "https://camiguindiver.com",
-    "telephone": "+639498765618",
-    "email": "camiguindiver@gmail.com",
-    "image": "https://camiguindiver.com/img/og-home.jpg",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Anito",
-      "addressLocality": "Mambajao",
-      "addressRegion": "Camiguin",
-      "addressCountry": "PH"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 9.2517,
-      "longitude": 124.7283
-    },
-    "openingHours": "Mo-Su 07:00-18:00",
-    "priceRange": "$$",
-    "sameAs": [
-      "https://www.facebook.com/people/Camiguin-Blue-Season-Dive-Center/61563295091419/"
-    ],
-    "makesOffer": [
+    "@graph": [
       {
-        "@type": "Offer",
-        "name": "Discover Scuba Diving",
-        "priceCurrency": "PHP",
-        "price": "7000"
+        "@type": ["LocalBusiness", "TravelAgency", "Store"],
+        "@id": "https://camiguindiver.com/#organization",
+        "name": "Blue Season Camiguin",
+        "alternateName": ["Blue Season Dive Center Camiguin", "Camiguin Blue Season Dive Center", "Camiguin Diver"],
+        "description": "PADI dive center and dive shop on Camiguin Island, Philippines. Camiguin diving courses, fun dives, and beachfront accommodation.",
+        "url": "https://camiguindiver.com",
+        "telephone": "+639498765618",
+        "email": "camiguindiver@gmail.com",
+        "image": [
+          "https://camiguindiver.com/img/og-home.jpg",
+          "https://camiguindiver.com/img/divesite/mantigue.jpg",
+          "https://camiguindiver.com/img/divesite/SC.jpg"
+        ],
+        "logo": "https://camiguindiver.com/img/logo.svg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Anito",
+          "addressLocality": "Mambajao",
+          "addressRegion": "Camiguin",
+          "postalCode": "9100",
+          "addressCountry": "PH"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 9.2517,
+          "longitude": 124.7283
+        },
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "07:00",
+          "closes": "18:00"
+        }],
+        "priceRange": "$$",
+        "currenciesAccepted": "PHP",
+        "paymentAccepted": "Cash, Bank Transfer",
+        "areaServed": [
+          {"@type": "Place", "name": "Camiguin Island"},
+          {"@type": "Place", "name": "Mambajao"},
+          {"@type": "Place", "name": "Philippines"}
+        ],
+        "knowsAbout": ["Scuba Diving", "PADI Courses", "Snorkeling", "Dive Sites Camiguin", "Marine Biology"],
+        "sameAs": [
+          "https://www.facebook.com/people/Camiguin-Blue-Season-Dive-Center/61563295091419/"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "PADI Diving Courses & Fun Dives in Camiguin",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Discover Scuba Diving Camiguin", "serviceType": "Intro Scuba Experience"}, "priceCurrency": "PHP", "price": "7000"},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "PADI Open Water Course Camiguin", "serviceType": "PADI Certification"}, "priceCurrency": "PHP", "price": "22000"},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "PADI Advanced Open Water Camiguin", "serviceType": "PADI Certification"}, "priceCurrency": "PHP", "price": "20000"},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fun Dive — 2 Dives Camiguin"}, "priceCurrency": "PHP", "price": "4500"},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Snorkeling Mantigue Island"}, "priceCurrency": "PHP", "price": "1500"}
+          ]
+        }
       },
       {
-        "@type": "Offer",
-        "name": "PADI Open Water Course",
-        "priceCurrency": "PHP",
-        "price": "22000"
+        "@type": "WebSite",
+        "@id": "https://camiguindiver.com/#website",
+        "url": "https://camiguindiver.com/",
+        "name": "Blue Season Camiguin — Camiguin Diving",
+        "description": "Camiguin Diving — PADI dive center on Camiguin Island, Philippines",
+        "publisher": {"@id": "https://camiguindiver.com/#organization"},
+        "inLanguage": "en"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where is the best place to go diving in Camiguin?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Camiguin has six main dive sites. Mantigue Island is the most popular for sea turtles and coral reefs; Burias Shoal is for advanced divers seeking thresher sharks; Sunken Cemetery offers historic volcanic ruins; Jigdup Shoal features a swim-through cave; White Island has scenic black coral gardens; and Cabuan is a macro paradise with giant clams. Blue Season Camiguin is a PADI dive center in Anito, Mambajao, offering dives to all these sites."}
+          },
+          {
+            "@type": "Question",
+            "name": "How much does diving cost in Camiguin?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Fun dives at Blue Season Camiguin start at ₱1,500 per dive for the house reef and ₱4,500 for a 2-dive boat trip. Discover Scuba Diving costs ₱7,000 (includes 2 dives). PADI Open Water certification is ₱22,000 all-inclusive. All prices include full equipment, boat, guide, and marine park fees."}
+          },
+          {
+            "@type": "Question",
+            "name": "Is Camiguin good for beginner divers?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Yes, Camiguin Island is excellent for beginners. Sites like Mantigue Island, White Island, and Cabuan have calm conditions, great visibility (15-30m), and shallow depths (5-20m). Blue Season is a PADI dive center with certified instructors offering Discover Scuba Diving and Open Water courses."}
+          },
+          {
+            "@type": "Question",
+            "name": "When is the best time to dive in Camiguin?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Camiguin offers year-round diving. The best conditions, with calmest seas and best visibility, are typically March to June. November through February can have stronger winds but still offer excellent diving. Water temperature stays between 26-29°C year-round."}
+          },
+          {
+            "@type": "Question",
+            "name": "How do I book a dive with Blue Season Camiguin?",
+            "acceptedAnswer": {"@type": "Answer", "text": "WhatsApp is the fastest way to book: +63 949 876 5618. We typically reply within an hour. You can also reach us via Facebook Messenger, WeChat (ID: camiguindiver), or email at camiguindiver@gmail.com."}
+          },
+          {
+            "@type": "Question",
+            "name": "How do I get to Camiguin Island?",
+            "acceptedAnswer": {"@type": "Answer", "text": "Fly to Camiguin Airport (CGM) via Cebu Pacific from Cebu, or take a ferry from Balingoan Port, Misamis Oriental (Cagayan de Oro area). Our resort in Anito, Mambajao is a short drive from both. We can arrange airport pickup."}
+          }
+        ]
       }
     ]
   }
@@ -123,12 +221,12 @@
         <div class="bubble"></div>
       </div>
       <div class="container hero-content">
-        <span class="section-label">PADI Dive Center — Camiguin Island</span>
-        <h1>Dive into the Untouched Waters of <em>Camiguin</em></h1>
-        <p>Discover pristine coral reefs, swim with sea turtles, and explore one of the Philippines' best-kept diving secrets — away from the crowds.</p>
+        <span class="section-label">PADI Dive Center &amp; Dive Shop — Camiguin Island, Philippines</span>
+        <h1>Camiguin Diving — Dive into the Untouched Waters of <em>Camiguin Island</em></h1>
+        <p>Blue Season is the PADI dive center for scuba diving in Camiguin. Discover pristine coral reefs, swim with sea turtles, and explore one of the Philippines' best-kept diving secrets — away from the crowds.</p>
         <div class="hero-buttons">
-          <a href="courses.html" class="btn btn-primary">Explore Courses</a>
-          <a href="dive-sites.html" class="btn btn-outline">View Dive Sites</a>
+          <a href="courses.html" class="btn btn-primary">Explore PADI Courses</a>
+          <a href="dive-sites.html" class="btn btn-outline">View Camiguin Dive Sites</a>
         </div>
       </div>
     </section>
@@ -136,9 +234,9 @@
     <!-- ========== WHY BLUE SEASON ========== -->
     <section class="section" id="why">
       <div class="container text-center">
-        <span class="section-label">Why Dive With Us</span>
-        <h2 class="section-title">Your Underwater Adventure Starts Here</h2>
-        <p class="section-subtitle">Camiguin Island offers an untouched diving experience that larger destinations can no longer provide.</p>
+        <span class="section-label">Why Dive Camiguin With Us</span>
+        <h2 class="section-title">Why Blue Season Is the Best Dive Shop in Camiguin</h2>
+        <p class="section-subtitle">Camiguin Island offers an untouched scuba diving experience that larger Philippine destinations can no longer provide.</p>
 
         <div class="features-grid">
           <div class="glass-card feature-card">
@@ -163,9 +261,9 @@
     <!-- ========== DIVE SITES PREVIEW ========== -->
     <section class="section" id="sites-preview">
       <div class="container">
-        <span class="section-label">Explore Our Dive Sites</span>
-        <h2 class="section-title">6 Spectacular Sites Around Camiguin</h2>
-        <p class="section-subtitle">From gentle coral gardens to thrilling drift dives — Camiguin has something for every level.</p>
+        <span class="section-label">Explore Our Camiguin Dive Sites</span>
+        <h2 class="section-title">6 Spectacular Dive Sites Around Camiguin Island</h2>
+        <p class="section-subtitle">From gentle coral gardens to thrilling drift dives — Camiguin diving has something for every level.</p>
 
         <div class="sites-grid">
           <a href="dive-sites.html#mantigue" class="glass-card site-card" style="color:inherit;">
@@ -254,9 +352,9 @@
     <!-- ========== COURSES OVERVIEW ========== -->
     <section class="section" id="courses-overview" style="background: linear-gradient(180deg, transparent, rgba(19,164,197,0.03), transparent);">
       <div class="container">
-        <span class="section-label">PADI Courses</span>
-        <h2 class="section-title">Learn to Dive in Paradise</h2>
-        <p class="section-subtitle">From your very first breath underwater to advanced certifications — we guide you every step of the way.</p>
+        <span class="section-label">PADI Diving Courses in Camiguin</span>
+        <h2 class="section-title">Learn to Dive in Camiguin — PADI Certifications</h2>
+        <p class="section-subtitle">From your very first breath underwater to advanced PADI certifications — we guide you every step of the way at our Camiguin dive center.</p>
 
         <div class="courses-grid">
           <div class="glass-card course-card">
@@ -315,11 +413,52 @@
       </div>
     </section>
 
+    <!-- ========== FAQ ========== -->
+    <section class="section" id="faq">
+      <div class="container">
+        <span class="section-label">Camiguin Diving FAQ</span>
+        <h2 class="section-title">Frequently Asked Questions About Camiguin Diving</h2>
+        <p class="section-subtitle">Answers to the most common questions about diving in Camiguin Island, Philippines.</p>
+
+        <div class="faq-list" style="max-width:820px; margin:40px auto 0; display:flex; flex-direction:column; gap:16px;">
+          <details class="glass-card" style="padding:20px 24px; cursor:pointer;">
+            <summary style="font-weight:600; font-size:1.05rem; list-style:none;">Where is the best place to go diving in Camiguin?</summary>
+            <p style="margin-top:12px;">Camiguin has six main dive sites. <strong>Mantigue Island</strong> is the most popular for sea turtles and coral reefs; <strong>Burias Shoal</strong> is for advanced divers seeking thresher sharks; <strong>Sunken Cemetery</strong> offers historic volcanic ruins; <strong>Jigdup Shoal</strong> features a swim-through cave; <strong>White Island</strong> has scenic black coral gardens; and <strong>Cabuan</strong> is a macro paradise with giant clams. Blue Season Camiguin is a PADI dive center in Anito, Mambajao, offering dives to all these sites.</p>
+          </details>
+
+          <details class="glass-card" style="padding:20px 24px; cursor:pointer;">
+            <summary style="font-weight:600; font-size:1.05rem; list-style:none;">How much does diving cost in Camiguin?</summary>
+            <p style="margin-top:12px;">Fun dives at Blue Season Camiguin start at <strong>₱1,500 per dive</strong> for the house reef and <strong>₱4,500 for a 2-dive boat trip</strong>. Discover Scuba Diving costs <strong>₱7,000</strong> (includes 2 dives). PADI Open Water certification is <strong>₱22,000</strong> all-inclusive. All prices include full equipment, boat, guide, and marine park fees.</p>
+          </details>
+
+          <details class="glass-card" style="padding:20px 24px; cursor:pointer;">
+            <summary style="font-weight:600; font-size:1.05rem; list-style:none;">Is Camiguin good for beginner divers?</summary>
+            <p style="margin-top:12px;">Yes — Camiguin Island is excellent for beginners. Sites like Mantigue Island, White Island, and Cabuan have calm conditions, great visibility (15–30m), and shallow depths (5–20m). Blue Season is a PADI dive center with certified instructors offering Discover Scuba Diving and Open Water courses.</p>
+          </details>
+
+          <details class="glass-card" style="padding:20px 24px; cursor:pointer;">
+            <summary style="font-weight:600; font-size:1.05rem; list-style:none;">When is the best time to dive in Camiguin?</summary>
+            <p style="margin-top:12px;">Camiguin offers year-round diving. The best conditions — calmest seas and best visibility — are typically <strong>March to June</strong>. November through February can have stronger winds but still offer excellent diving. Water temperature stays between 26–29°C year-round.</p>
+          </details>
+
+          <details class="glass-card" style="padding:20px 24px; cursor:pointer;">
+            <summary style="font-weight:600; font-size:1.05rem; list-style:none;">How do I book a dive with Blue Season Camiguin?</summary>
+            <p style="margin-top:12px;">WhatsApp is the fastest way to book: <a href="https://wa.me/639498765618" target="_blank" rel="noopener">+63 949 876 5618</a>. We typically reply within an hour. You can also reach us via Facebook Messenger, WeChat (ID: camiguindiver), or email at <a href="mailto:camiguindiver@gmail.com">camiguindiver@gmail.com</a>.</p>
+          </details>
+
+          <details class="glass-card" style="padding:20px 24px; cursor:pointer;">
+            <summary style="font-weight:600; font-size:1.05rem; list-style:none;">How do I get to Camiguin Island?</summary>
+            <p style="margin-top:12px;">Fly to Camiguin Airport (CGM) via Cebu Pacific from Cebu, or take a ferry from Balingoan Port, Misamis Oriental (Cagayan de Oro area). Our resort in Anito, Mambajao is a short drive from both. We can arrange airport pickup — just ask when you book.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <!-- ========== CTA ========== -->
     <section class="cta-section">
       <div class="container cta-content">
-        <h2>Ready to Dive In?</h2>
-        <p>Book your dive experience today via WhatsApp for the fastest response. We typically reply within an hour.</p>
+        <h2>Ready to Dive Camiguin?</h2>
+        <p>Book your Camiguin diving experience today via WhatsApp for the fastest response. We typically reply within an hour.</p>
         <div class="cta-buttons">
           <a href="https://wa.me/639498765618?text=Hi%20Blue%20Season!%20I%27d%20like%20to%20book%20a%20dive." class="btn btn-whatsapp" target="_blank" rel="noopener">💬 WhatsApp Us</a>
           <a href="contact.html" class="btn btn-outline">Contact Page</a>

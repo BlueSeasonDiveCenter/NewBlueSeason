@@ -39,6 +39,9 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  /* Match page color so iOS/Android status bar and overscroll bounce
+     stay consistent with the dark theme (no white/gray flash). */
+  background-color: #0a1628;
 }
 
 body {
@@ -163,6 +166,119 @@ ul { list-style: none; }
 
 .text-accent {
   color: var(--color-accent);
+}
+
+.section-copy {
+  max-width: 760px;
+  margin-bottom: 32px;
+}
+
+.section-copy p + p {
+  margin-top: 16px;
+}
+
+.link-chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+.link-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(92, 225, 230, 0.14);
+  background: rgba(92, 225, 230, 0.05);
+  color: var(--color-text);
+  font-size: 0.9rem;
+  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.link-chip:hover {
+  color: var(--color-accent);
+  background: rgba(92, 225, 230, 0.1);
+  border-color: rgba(92, 225, 230, 0.22);
+  transform: translateY(-2px);
+}
+
+.info-grid,
+.guide-grid,
+.faq-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.info-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.guide-grid,
+.faq-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.info-card,
+.guide-card,
+.faq-card {
+  padding: 30px;
+}
+
+.info-card h3,
+.guide-card h3,
+.faq-card h3 {
+  margin-bottom: 12px;
+}
+
+.info-card p,
+.guide-card p,
+.faq-card p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.guide-list {
+  list-style: none;
+  margin-top: 16px;
+}
+
+.guide-list li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--color-text);
+  font-size: 0.93rem;
+}
+
+.guide-list li + li {
+  margin-top: 10px;
+}
+
+.guide-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+}
+
+.stats-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0 28px;
+}
+
+.stat-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(232, 193, 112, 0.08);
+  border: 1px solid rgba(232, 193, 112, 0.14);
+  color: var(--color-text);
+  font-size: 0.88rem;
 }
 
 /* ---------- Buttons ---------- */
@@ -331,14 +447,14 @@ ul { list-style: none; }
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
 }
 
 .nav-links a {
   color: var(--color-text);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 500;
-  padding: 8px 16px;
+  padding: 8px 14px;
   border-radius: 50px;
   transition: all 0.3s;
 }
@@ -354,7 +470,7 @@ ul { list-style: none; }
 }
 
 .nav-cta {
-  margin-left: 8px;
+  margin-left: 4px;
 }
 
 /* Mobile Menu Toggle */
@@ -1155,6 +1271,10 @@ ul { list-style: none; }
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .footer-grid {
     grid-template-columns: 1fr 1fr;
     gap: 32px;
@@ -1235,6 +1355,12 @@ ul { list-style: none; }
   }
 
   .courses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-grid,
+  .guide-grid,
+  .faq-grid {
     grid-template-columns: 1fr;
   }
 

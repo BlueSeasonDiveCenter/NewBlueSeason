@@ -1,33 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
   <url>
     <loc>https://camiguindiver.com/</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://camiguindiver.com/img/hero-home.jpg</image:loc>
+      <image:title>Camiguin Diving — Blue Season PADI Dive Center</image:title>
+      <image:caption>Sea turtle and coral reef at Mantigue Island, Camiguin</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://camiguindiver.com/img/divesite/mantigue.jpg</image:loc>
+      <image:title>Mantigue Island Dive Site Camiguin</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://camiguindiver.com/img/divesite/SC.jpg</image:loc>
+      <image:title>Sunken Cemetery Dive Site Camiguin</image:title>
+    </image:image>
   </url>
+
   <url>
     <loc>https://camiguindiver.com/dive-sites.html</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://camiguindiver.com/img/divesite/mantigue.jpg</image:loc>
+      <image:title>Mantigue Island Diving — Sea Turtles Camiguin</image:title>
+      <image:caption>Green sea turtle swimming over coral reef at Mantigue Island Camiguin</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://camiguindiver.com/img/divesite/Burias.jpg</image:loc>
+      <image:title>Burias Shoal — Thresher Shark Dive Camiguin</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://camiguindiver.com/img/divesite/jigdup.jpg</image:loc>
+      <image:title>Jigdup Shoal Cave Dive Camiguin</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://camiguindiver.com/img/divesite/whiteisland.jpg</image:loc>
+      <image:title>White Island Coral Garden Camiguin</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://camiguindiver.com/img/divesite/cabuan.jpg</image:loc>
+      <image:title>Cabuan Giant Clam Dive Camiguin</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://camiguindiver.com/img/divesite/SC.jpg</image:loc>
+      <image:title>Sunken Cemetery Volcanic Ruins Camiguin</image:title>
+    </image:image>
   </url>
+
   <url>
     <loc>https://camiguindiver.com/courses.html</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://camiguindiver.com/accommodation.html</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://camiguindiver.com/contact.html</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
 </urlset>
