@@ -4,7 +4,17 @@
       "mcp__Claude_Preview__preview_start",
       "Bash(du -sh /Users/tiger/Documents/WebCode/NewBlueSeason/img/*)",
       "Bash(ls -la /Users/tiger/Documents/WebCode/NewBlueSeason/img/hero-home*)",
-      "Bash(ls /Users/tiger/Documents/WebCode/NewBlueSeason/img/logo*)"
+      "Bash(ls /Users/tiger/Documents/WebCode/NewBlueSeason/img/logo*)",
+      "Bash(ruby -run -e httpd . -p 8000 -b 0.0.0.0)",
+      "Bash(/usr/libexec/ApplicationFirewall/socketfilterfw --getglobalstate)",
+      "Bash(/usr/libexec/ApplicationFirewall/socketfilterfw --getappblocked /usr/bin/ruby)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://127.0.0.1:8000)",
+      "Bash(grep -n \"nav-toggle\" /Users/tiger/Documents/WebCode/NewBlueSeason/*.html)",
+      "Bash(grep -c \"icon-menu\" /Users/tiger/Documents/WebCode/NewBlueSeason/*.html)",
+      "Bash(grep -c 'icon-close.*display:none' /Users/tiger/Documents/WebCode/NewBlueSeason/*.html)",
+      "Bash(grep -c 'span></span><span></span><span>' /Users/tiger/Documents/WebCode/NewBlueSeason/*.html)",
+      "Bash(grep -n \"📍\" /Users/tiger/Documents/WebCode/NewBlueSeason/*.html)",
+      "Bash(kill 3775 4874)"
     ]
   }
 }

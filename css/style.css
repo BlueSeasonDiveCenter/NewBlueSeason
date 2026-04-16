@@ -514,11 +514,11 @@ ul { list-style: none; }
   height: 2px;
   background: var(--color-text-light);
   border-radius: 2px;
-  transition: all 0.3s;
+  transition: transform 0.3s ease, opacity 0.1s ease;
 }
 
 .nav-toggle.active span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: translateY(7px) rotate(45deg);
 }
 
 .nav-toggle.active span:nth-child(2) {
@@ -526,8 +526,9 @@ ul { list-style: none; }
 }
 
 .nav-toggle.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+  transform: translateY(-7px) rotate(-45deg);
 }
+
 
 /* ---------- Hero ---------- */
 .hero {
@@ -1323,8 +1324,28 @@ ul { list-style: none; }
     border-bottom: 1px solid var(--color-border);
     padding: 16px 0;
     transform: translateY(-120%);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, top 0.4s ease;
     z-index: 999;
+  }
+
+  .navbar.scrolled .nav-menu,
+  .navbar.menu-open .nav-menu {
+    top: var(--nav-height-scrolled);
+  }
+
+  /* When menu is open, match scrolled navbar appearance for consistency */
+  .navbar.menu-open {
+    height: var(--nav-height-scrolled);
+    padding: 6px 0;
+    background: var(--color-glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid var(--color-glass-border);
+  }
+
+  .navbar.menu-open .nav-logo-img {
+    height: 40px;
   }
 
   .nav-menu.open {

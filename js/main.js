@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const navOverlay = document.querySelector('.nav-overlay');
 
   function openMenu() {
+    navbar.classList.add('menu-open');
     navToggle.classList.add('active');
     navMenu.classList.add('open');
     if (navOverlay) navOverlay.classList.add('active');
@@ -31,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function closeMenu() {
+    navbar.classList.remove('menu-open');
     navToggle.classList.remove('active');
     navMenu.classList.remove('open');
     if (navOverlay) navOverlay.classList.remove('active');
