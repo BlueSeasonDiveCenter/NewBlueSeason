@@ -761,6 +761,18 @@ ul { list-style: none; }
   border: 1px solid rgba(92, 225, 230, 0.1);
 }
 
+@media (min-width: 769px) {
+  .site-highlights-compact {
+    flex-wrap: nowrap;
+    gap: 4px;
+  }
+  .site-highlights-compact span {
+    white-space: nowrap;
+    font-size: 0.7rem;
+    padding: 3px 8px;
+  }
+}
+
 /* ---------- Course Cards ---------- */
 .courses-grid {
   display: grid;
@@ -1216,6 +1228,7 @@ ul { list-style: none; }
 .site-detail {
   padding: 40px;
   margin-bottom: 32px;
+  scroll-margin-top: 90px;
 }
 
 .site-detail-grid {
