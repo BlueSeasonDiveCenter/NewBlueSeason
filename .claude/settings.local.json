@@ -14,7 +14,8 @@
       "Bash(grep -c 'icon-close.*display:none' /Users/tiger/Documents/WebCode/NewBlueSeason/*.html)",
       "Bash(grep -c 'span></span><span></span><span>' /Users/tiger/Documents/WebCode/NewBlueSeason/*.html)",
       "Bash(grep -n \"📍\" /Users/tiger/Documents/WebCode/NewBlueSeason/*.html)",
-      "Bash(kill 3775 4874)"
+      "Bash(kill 3775 4874)",
+      "Bash(kill 3271)"
     ]
   }
 }
